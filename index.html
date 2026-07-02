@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bigfoot Comedy Show — Free Stand-Up in Los Angeles (East & West)</title>
+<meta name="description" content="Bigfoot Comedy Show is LA's free neighborhood stand-up night. Catch Bigfoot East at Bigfoot Lodge and Bigfoot West at Bigfoot Lodge West. As featured in the Netflix Is A Joke Fest and LA Weekly.">
+<meta property="og:title" content="Bigfoot Comedy Show — Free Stand-Up in Los Angeles">
+<meta property="og:description" content="LA's free neighborhood stand-up night. Bigfoot East & Bigfoot West. As featured in the Netflix Is A Joke Fest and LA Weekly.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/flyer-may-niaj-west.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rye&family=Bitter:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --gold:#f0b429; --gold-deep:#e08a1e; --blue:#48b6e6; --blue-deep:#2f9fd0;
+    --cream:#f7ead0; --cream-dim:#e6d3ac;
+    --wood:#3a2314; --wood-dark:#2a1810; --wood-light:#4d3018;
+    --sky-top:#2a0f0c; --sky-mid:#7a2a16; --sky-glow:#e0752a;
+    --ink:#1c0e08;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth; overflow-x:hidden; background:#1a0d07}
+  body{
+    font-family:'Bitter',Georgia,serif; color:var(--cream);
+    background:#1a0d07 url('images/bg-sunset.jpg') center top/cover fixed no-repeat;
+    line-height:1.6; -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,.rye{font-family:'Rye',serif; font-weight:400; letter-spacing:.5px; line-height:1.05}
+  a{color:inherit}
+  .wrap{max-width:1080px; margin:0 auto; padding:0 22px}
+
+  .planks{
+    background:linear-gradient(rgba(18,9,5,.5),rgba(18,9,5,.66)), url('images/wood-plank.jpg') center/cover no-repeat;
+    background-color:#52301c;
+  }
+
+  header.hero{
+    position:relative; text-align:center; isolation:isolate;
+    background:linear-gradient(180deg, rgba(20,8,5,.55) 0%, rgba(20,8,5,.12) 34%, rgba(20,8,5,.08) 58%, rgba(26,14,8,.80) 100%);
+    overflow:hidden;
+  }
+  .skyline{display:none}
+  .hero-inner{padding:64px 22px 40px; position:relative; z-index:1}
+  .kicker{
+    font-family:'Bitter'; font-weight:700; text-transform:uppercase; letter-spacing:4px;
+    font-size:.82rem; color:var(--cream-dim); margin-bottom:14px;
+  }
+  h1.title{
+    font-family:'Rye',serif; font-weight:400; letter-spacing:1px; text-transform:uppercase;
+    font-size:clamp(2.7rem,8.6vw,6rem); color:#f3d59b;
+    text-shadow:
+      0 2px 0 #7a4a1e, 0 4px 0 #5c3616, 0 6px 0 #3f2410,
+      0 10px 22px rgba(0,0,0,.55);
+    -webkit-text-stroke:1.5px #4a2b12;
+  }
+  .banner{
+    display:inline-block; margin:16px 0 0; padding:7px 40px; position:relative;
+    font-family:'Rye'; font-size:clamp(1rem,3vw,1.5rem); color:var(--cream);
+    border:2px solid var(--gold); border-radius:4px; letter-spacing:3px;
+    background:rgba(30,14,8,.35);
+  }
+  .banner::before,.banner::after{
+    content:""; position:absolute; top:50%; width:22px; height:2px; background:var(--gold);
+  }
+  .banner::before{left:-26px} .banner::after{right:-26px}
+  .subtitle{margin:22px auto 0; max-width:640px; font-size:clamp(1.02rem,2.4vw,1.22rem); color:#fff4df; text-shadow:0 1px 6px rgba(0,0,0,.5)}
+  .free-badge{
+    display:inline-block; margin-top:18px;
+    font-family:'Rye'; color:var(--gold); font-size:1.25rem; letter-spacing:2px;
+    text-shadow:0 2px 0 #6e3d12, 0 3px 8px rgba(0,0,0,.5);
+  }
+  .hero-seen{margin-top:38px; text-align:center}
+  .seen-label{display:block; font-family:'Rye',serif; color:var(--cream-dim); font-size:1.15rem; letter-spacing:3px; margin-bottom:13px}
+  .hero-logos{display:flex; gap:24px; justify-content:center; align-items:center; flex-wrap:wrap}
+  .hero-logos a{display:inline-flex}
+  .hero-logos img{height:38px; width:auto; opacity:.95; filter:drop-shadow(0 2px 5px rgba(0,0,0,.55)); transition:transform .15s ease, opacity .15s ease}
+  .hero-logos img.law-sm{height:29px}
+  .hero-logos a:hover img{opacity:1; transform:translateY(-2px)}
+  .cta-row{display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-top:30px}
+  .btn{
+    display:inline-flex; align-items:center; gap:9px; text-decoration:none;
+    font-family:'Rye'; font-size:1.05rem; letter-spacing:1px; padding:15px 30px;
+    border-radius:8px; border:2px solid rgba(0,0,0,.25); color:var(--ink);
+    box-shadow:0 5px 0 rgba(0,0,0,.35), 0 8px 20px rgba(0,0,0,.35);
+    transition:transform .12s ease, box-shadow .12s ease;
+  }
+  .btn:hover{transform:translateY(2px); box-shadow:0 3px 0 rgba(0,0,0,.35),0 6px 14px rgba(0,0,0,.35)}
+  .btn:active{transform:translateY(5px); box-shadow:0 0 0 rgba(0,0,0,.35)}
+  .btn.west{background:linear-gradient(180deg,#f7c34a,var(--gold-deep))}
+  .btn.east{background:linear-gradient(180deg,#6fcbef,var(--blue-deep)); color:#08222e}
+  .cta-row .btn{min-width:230px; justify-content:center}
+  .btn small{display:block; font-family:'Bitter'; font-weight:700; font-size:.62rem; letter-spacing:1.5px; opacity:.8; text-transform:uppercase; font-variant:normal}
+  .btn>span{font-variant-caps:all-small-caps; letter-spacing:1px}
+
+  section{padding:44px 0; position:relative}
+  .sec-title{text-align:center; font-size:clamp(1.7rem,5vw,2.6rem); color:var(--gold); margin-bottom:8px;
+    text-shadow:0 2px 0 #5c3616,0 3px 10px rgba(0,0,0,.4)}
+  .sec-sub{text-align:center; color:var(--cream-dim); max-width:620px; margin:0 auto 40px}
+  .star-rule{text-align:center; color:var(--gold); letter-spacing:8px; font-size:1.1rem; margin:0 0 6px}
+
+  #about{background:linear-gradient(180deg, rgba(30,16,9,.88), rgba(42,24,15,.9))}
+  #about p{max-width:720px; margin:0 auto; text-align:center; font-size:1.14rem; color:#f2e4c8}
+
+  #shows{background:rgba(26,14,8,.84)}
+  .shows-grid{display:grid; grid-template-columns:1fr 1fr; gap:26px}
+  @media(max-width:760px){.shows-grid{grid-template-columns:1fr}}
+  .card{
+    border-radius:14px; padding:32px 28px; position:relative; overflow:hidden;
+    background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(0,0,0,.25)), var(--wood);
+    border:1px solid rgba(0,0,0,.4);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.06), 0 14px 30px rgba(0,0,0,.4);
+  }
+  .card.west{border-top:5px solid var(--gold)}
+  .card.east{border-top:5px solid var(--blue)}
+  .card .tag{font-family:'Rye'; font-size:1.9rem; margin-bottom:2px; font-variant-caps:all-small-caps; letter-spacing:1px}
+  .card.west .tag{color:var(--gold)}
+  .card.east .tag{color:var(--blue)}
+  .card .venue{font-weight:700; font-size:1.15rem; color:#fff}
+  .card .addr{color:var(--cream-dim); font-size:.98rem; margin-bottom:14px}
+  .card .meta{display:flex; gap:18px; flex-wrap:wrap; font-size:.95rem; color:#f2e4c8; margin-bottom:20px}
+  .card .meta b{color:#fff}
+  .card .free{display:inline-block; font-family:'Rye'; font-size:.85rem; padding:3px 12px; border-radius:20px;
+    border:1px solid currentColor; margin-bottom:16px}
+  .card.west .free{color:var(--gold)} .card.east .free{color:var(--blue)}
+  .card .btn{width:100%; justify-content:center}
+
+  #press{background:linear-gradient(180deg, rgba(42,24,15,.9), rgba(26,14,8,.88))}
+  .press-grid{display:flex; gap:18px; justify-content:center; flex-wrap:wrap; margin-top:10px}
+  .press-card{
+    flex:1 1 260px; max-width:340px; text-decoration:none; text-align:center;
+    background:rgba(0,0,0,.28); border:1px solid rgba(240,180,41,.25); border-radius:12px;
+    padding:26px 22px; transition:border-color .15s ease, transform .15s ease;
+  }
+  .press-card:hover{border-color:var(--gold); transform:translateY(-3px)}
+  .press-card .name{font-family:'Rye'; font-size:1.3rem; color:var(--cream); margin-bottom:6px}
+  .press-card .desc{font-size:.92rem; color:var(--cream-dim)}
+  .press-card .link{display:inline-block; margin-top:12px; font-weight:700; color:var(--gold); font-size:.86rem; text-transform:uppercase; letter-spacing:1.5px}
+  /* logo strips */
+  #comedians{background:linear-gradient(180deg, rgba(30,16,9,.9), rgba(26,14,8,.86))}
+  .logo-strip{display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:30px 46px; margin:18px auto 0; max-width:900px}
+  .logo-strip img{height:44px; width:auto; opacity:.92; filter:drop-shadow(0 2px 5px rgba(0,0,0,.5)); transition:opacity .15s ease, transform .15s ease}
+  .logo-strip a{display:inline-flex}
+  .logo-strip a:hover img{opacity:1; transform:translateY(-2px)}
+  .logo-strip img.badge{height:58px}
+  .press-strip{gap:40px 60px; margin-top:22px}
+  .press-strip img{height:72px}
+  .la-weekly{font-family:'Bitter',serif; font-weight:700; font-size:2rem; letter-spacing:1px; color:#fff; line-height:1; text-decoration:none;
+    display:inline-flex; flex-direction:column; align-items:center; filter:drop-shadow(0 2px 5px rgba(0,0,0,.5))}
+  .la-weekly .cap{font-size:.6rem; letter-spacing:3px; color:var(--cream-dim); text-transform:uppercase; margin-top:4px}
+
+  #gallery{background:rgba(26,14,8,.84)}
+  .gallery-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:18px; margin-top:8px}
+  .gallery-grid a{display:block; border-radius:10px; overflow:hidden; border:3px solid var(--wood-light);
+    box-shadow:0 8px 20px rgba(0,0,0,.4); transition:transform .15s ease}
+  .gallery-grid a:hover{transform:scale(1.03)}
+  .gallery-grid img{width:100%; display:block}
+  .gallery-grid.collapsed a:nth-child(n+5){display:none}
+  .gallery-toggle-wrap{text-align:center; margin-top:26px}
+  .gallery-toggle{cursor:pointer; font-family:'Rye',serif; letter-spacing:1px; background:transparent; color:var(--gold);
+    border:2px solid var(--gold); border-radius:8px; padding:11px 28px; font-size:1rem; transition:background .15s ease, color .15s ease}
+  .gallery-toggle:hover{background:var(--gold); color:var(--ink)}
+
+  footer{width:100%; text-align:center; padding:50px 22px 40px}
+  footer .ig{display:inline-flex; align-items:center; gap:10px; text-decoration:none; font-family:'Rye';
+    font-size:1.3rem; color:var(--cream); margin-bottom:10px}
+  footer .ig svg{width:26px; height:26px}
+  footer .ig:hover{color:var(--gold)}
+  footer .note{color:var(--cream-dim); font-size:.9rem; margin-top:14px}
+  footer .copy{color:#8a6f52; font-size:.8rem; margin-top:18px}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <svg class="skyline" viewBox="0 0 1440 260" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <g fill="#1c0d07">
+      <rect x="0" y="200" width="1440" height="60"/>
+      <path d="M60 200 V120 h150 v80 z M60 120 l75 -34 l75 34 z"/>
+      <rect x="95" y="150" width="30" height="50"/>
+      <rect x="150" y="150" width="24" height="30"/>
+      <rect x="255" y="90" width="8" height="110"/>
+      <path d="M1180 200 v-70 a14 14 0 0 1 28 0 v70 z M1194 165 h22 a10 10 0 0 1 10 10 v10 M1194 150 h-22 a10 10 0 0 0 -10 10 v14"
+            stroke="#1c0d07" stroke-width="12" fill="none" stroke-linecap="round"/>
+      <path d="M1290 200 V130 h120 v70 z M1290 130 l60 -30 l60 30 z"/>
+      <rect x="1330" y="155" width="26" height="45"/>
+      <g>
+        <rect x="360" y="176" width="6" height="24"/><rect x="392" y="176" width="6" height="24"/>
+        <rect x="424" y="176" width="6" height="24"/><rect x="356" y="182" width="78" height="5"/>
+      </g>
+    </g>
+  </svg>
+
+  <div class="hero-inner">
+    <div class="kicker">Los Angeles &bull; Free Stand-Up Comedy</div>
+    <h1 class="title">Bigfoot Comedy</h1>
+    <p class="subtitle">LA's Free Neighborhood Stand-Up Night featuring killer lineups in an intimate lodge vibe. Two shows, two sides of town.</p>
+    <div class="free-badge">&#9733; Always a FREE Show &#9733;</div>
+    <div class="cta-row">
+      <a class="btn east" href="https://bigfooteast.eventbrite.com" target="_blank" rel="noopener">
+        <span>Bigfoot Comedy East<small>RSVP &rarr;</small></span>
+      </a>
+      <a class="btn west" href="https://bigfootwest.eventbrite.com" target="_blank" rel="noopener">
+        <span>Bigfoot Comedy West<small>RSVP &rarr;</small></span>
+      </a>
+    </div>
+    <div class="hero-seen">
+      <span class="seen-label">As Seen In</span>
+      <div class="hero-logos">
+        <a href="https://www.netflixisajokefest.com/shows/bigfoot-comedy" target="_blank" rel="noopener"><img src="images/logos_w/netflix-is-a-joke.png" alt="Netflix Is A Joke. Fest"></a>
+        <a href="https://www.laweekly.com/netflix-is-a-joke-fest-features-78-of-las-best-neighborhood-live-comedy-shows-this-week-for-free/" target="_blank" rel="noopener"><img class="law-sm" src="images/logos_w/la-weekly.png" alt="LA Weekly"></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<section id="about">
+  <div class="wrap">
+    <div class="star-rule">&#9733; &#9733; &#9733;</div>
+    <h2 class="sec-title">The Show</h2>
+    <p>Bigfoot Comedy brings some of the hottest touring comics you've seen on Netflix, Hulu, and Max &mdash; as well as paid regulars at the Comedy Store and Improv &mdash; to two beloved neighborhood bars for a free monthly night of stand-up. There's never a cover or a minimum. Grab a drink, grab a seat, and catch a killer lineup on either side of town: <b>Bigfoot Comedy East</b> in Atwater and <b>Bigfoot Comedy West</b> in Culver City. (21+)</p>
+  </div>
+</section>
+
+<section id="shows">
+  <div class="wrap">
+    <div class="star-rule">&#9733; &#9733; &#9733;</div>
+    <h2 class="sec-title">Two Shows, Two Sides of Town</h2>
+    <p class="sec-sub">New lineups every month. Reserve your free spot below.</p>
+    <div class="shows-grid">
+
+      <div class="card east">
+        <div class="tag">Bigfoot Comedy East</div>
+        <div class="venue">Bigfoot Lodge &bull; Atwater</div>
+        <div class="addr">3172 Los Feliz Blvd, Los Angeles, CA 90039</div>
+        <div class="meta"><span><b>Doors</b> 7:00 PM</span><span><b>Show</b> 7:30 PM</span><span><b>Second Sundays</b> &bull; 21+</span></div>
+        <div class="free">&#9733; Free Show</div>
+        <a class="btn east" href="https://bigfooteast.eventbrite.com" target="_blank" rel="noopener"><span>RSVP on Eventbrite &rarr;</span></a>
+      </div>
+
+      <div class="card west">
+        <div class="tag">Bigfoot Comedy West</div>
+        <div class="venue">Bigfoot Lodge West &bull; Culver City</div>
+        <div class="addr">10939 Venice Blvd, Los Angeles, CA 90034</div>
+        <div class="meta"><span><b>Doors</b> 6:30 PM</span><span><b>Show</b> 7:00 PM</span><span><b>Last Sundays</b> &bull; 21+</span></div>
+        <div class="free">&#9733; Free Show</div>
+        <a class="btn west" href="https://bigfootwest.eventbrite.com" target="_blank" rel="noopener"><span>RSVP on Eventbrite &rarr;</span></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="comedians">
+  <div class="wrap">
+    <div class="star-rule">&#9733; &#9733; &#9733;</div>
+    <h2 class="sec-title">Comedians Seen On</h2>
+    <p class="sec-sub">Our lineups feature comics from these stages and screens.</p>
+    <div class="logo-strip">
+      <img src="images/logos_w/netflix.png" alt="Netflix">
+      <img src="images/logos_w/hulu.png" alt="Hulu">
+      <img src="images/logos_w/max.png" alt="Max">
+      <img src="images/logos_w/comedy-central.png" alt="Comedy Central">
+      <img src="images/logos_w/fox.png" alt="Fox">
+      <img src="images/logos_w/kimmel.png" alt="Jimmy Kimmel Live">
+      <img src="images/logos_w/dont-tell.png" alt="Don't Tell Comedy">
+      <img src="images/logos_w/improv.png" alt="The Improv">
+      <img class="badge" src="images/logos_c/comedy-store.png" alt="The Comedy Store">
+      <img class="badge" src="images/logos_c/laugh-factory.png" alt="Laugh Factory">
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="star-rule">&#9733; &#9733; &#9733;</div>
+    <h2 class="sec-title">Past Shows</h2>
+    <p class="sec-sub">A look back at some of our recent lineups.</p>
+    <div class="gallery-grid collapsed">
+      <a href="images/flyer-jun-west.jpg" target="_blank" rel="noopener"><img src="images/flyer-jun-west.jpg" alt="Bigfoot Comedy West - June lineup" loading="lazy"></a>
+      <a href="images/flyer-jun-east.jpg" target="_blank" rel="noopener"><img src="images/flyer-jun-east.jpg" alt="Bigfoot Comedy East - June lineup" loading="lazy"></a>
+      <a href="images/flyer-may-west.jpg" target="_blank" rel="noopener"><img src="images/flyer-may-west.jpg" alt="Bigfoot Comedy West - May, Netflix Is A Joke Fest lineup" loading="lazy"></a>
+      <a href="images/flyer-may-east.jpg" target="_blank" rel="noopener"><img src="images/flyer-may-east.jpg" alt="Bigfoot Comedy East - May lineup" loading="lazy"></a>
+      <a href="images/flyer-apr-west.jpg" target="_blank" rel="noopener"><img src="images/flyer-apr-west.jpg" alt="Bigfoot Comedy West - April lineup" loading="lazy"></a>
+      <a href="images/flyer-apr-east.jpg" target="_blank" rel="noopener"><img src="images/flyer-apr-east.jpg" alt="Bigfoot Comedy East - April lineup" loading="lazy"></a>
+      <a href="images/flyer-mar-west.jpg" target="_blank" rel="noopener"><img src="images/flyer-mar-west.jpg" alt="Bigfoot Comedy West - March lineup" loading="lazy"></a>
+      <a href="images/flyer-mar-east.jpg" target="_blank" rel="noopener"><img src="images/flyer-mar-east.jpg" alt="Bigfoot Comedy East - March lineup" loading="lazy"></a>
+      <a href="images/flyer-feb-west.jpg" target="_blank" rel="noopener"><img src="images/flyer-feb-west.jpg" alt="Bigfoot Comedy West - February lineup" loading="lazy"></a>
+      <a href="images/flyer-feb-east.jpg" target="_blank" rel="noopener"><img src="images/flyer-feb-east.jpg" alt="Bigfoot Comedy East - February lineup" loading="lazy"></a>
+      <a href="images/flyer-2024-nov.jpg" target="_blank" rel="noopener"><img src="images/flyer-2024-nov.jpg" alt="Bigfoot Comedy - November lineup" loading="lazy"></a>
+      <a href="images/flyer-2024-oct.jpg" target="_blank" rel="noopener"><img src="images/flyer-2024-oct.jpg" alt="Bigfoot Comedy - October lineup" loading="lazy"></a>
+      <a href="images/flyer-2024-sept.jpg" target="_blank" rel="noopener"><img src="images/flyer-2024-sept.jpg" alt="Bigfoot Comedy - September lineup" loading="lazy"></a>
+      <a href="images/flyer-2024-aug.jpg" target="_blank" rel="noopener"><img src="images/flyer-2024-aug.jpg" alt="Bigfoot Comedy - August lineup" loading="lazy"></a>
+      <a href="images/flyer-2024-july.jpg" target="_blank" rel="noopener"><img src="images/flyer-2024-july.jpg" alt="Bigfoot Comedy - July lineup" loading="lazy"></a>
+      <a href="images/flyer-2024-june.jpg" target="_blank" rel="noopener"><img src="images/flyer-2024-june.jpg" alt="Bigfoot Comedy - June lineup" loading="lazy"></a>
+      <a href="images/flyer-2024-may.jpg" target="_blank" rel="noopener"><img src="images/flyer-2024-may.jpg" alt="Bigfoot Comedy - May lineup" loading="lazy"></a>
+      <a href="images/flyer-2024-apr.jpg" target="_blank" rel="noopener"><img src="images/flyer-2024-apr.jpg" alt="Bigfoot Comedy - April lineup" loading="lazy"></a>
+      <a href="images/flyer-2024-mar.jpg" target="_blank" rel="noopener"><img src="images/flyer-2024-mar.jpg" alt="Bigfoot Comedy - March lineup" loading="lazy"></a>
+    </div>
+    <div class="gallery-toggle-wrap"><button class="gallery-toggle" type="button">Show more shows</button></div>
+  </div>
+</section>
+
+<footer class="planks">
+  <a class="ig" href="https://instagram.com/bigfootcomedyshow" target="_blank" rel="noopener">
+    <span class="follow">Follow us</span>
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.06 1.8.25 2.2.42.6.22 1 .48 1.4.9.42.4.68.8.9 1.4.17.4.36 1 .42 2.2.07 1.3.07 1.7.07 4.9s0 3.6-.07 4.9c-.06 1.2-.25 1.8-.42 2.2-.22.6-.48 1-.9 1.4-.4.42-.8.68-1.4.9-.4.17-1 .36-2.2.42-1.3.07-1.7.07-4.9.07s-3.6 0-4.9-.07c-1.2-.06-1.8-.25-2.2-.42-.6-.22-1-.48-1.4-.9-.42-.4-.68-.8-.9-1.4-.17-.4-.36-1-.42-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.9c.06-1.2.25-1.8.42-2.2.22-.6.48-1 .9-1.4.4-.42.8-.68 1.4-.9.4-.17 1-.36 2.2-.42C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.07-.9.04-1.4.2-1.7.32-.43.17-.74.37-1.06.7-.32.32-.53.63-.7 1.06-.12.3-.28.8-.32 1.7C3.98 8.5 3.98 8.9 3.98 12s0 3.5.07 4.7c.04.9.2 1.4.32 1.7.17.43.37.74.7 1.06.32.32.63.53 1.06.7.3.12.8.28 1.7.32 1.2.07 1.6.07 4.7.07s3.5 0 4.7-.07c.9-.04 1.4-.2 1.7-.32.43-.17.74-.37 1.06-.7.32-.32.53-.63.7-1.06.12-.3.28-.8.32-1.7.07-1.2.07-1.6.07-4.7s0-3.5-.07-4.7c-.04-.9-.2-1.4-.32-1.7-.17-.43-.37-.74-.7-1.06-.32-.32-.63-.53-1.06-.7-.3-.12-.8-.28-1.7-.32C15.5 4 15.1 4 12 4zm0 3.06A4.94 4.94 0 1 0 12 17a4.94 4.94 0 0 0 0-9.88zm0 8.14A3.2 3.2 0 1 1 12 8.8a3.2 3.2 0 0 1 0 6.4zm6.3-8.34a1.15 1.15 0 1 1-2.3 0 1.15 1.15 0 0 1 2.3 0z"/></svg>
+    @bigfootcomedyshow
+  </a>
+  <p class="note">Both shows are always free &bull; Lineups subject to change</p>
+  <p class="copy">&copy; <span id="yr"></span> Bigfoot Comedy Show &bull; Los Angeles, CA</p>
+</footer>
+<script>
+(function(){
+  var btn=document.querySelector('.gallery-toggle');
+  var grid=document.querySelector('.gallery-grid');
+  if(btn&&grid){
+    var total=grid.querySelectorAll('a').length, shown=4, more=Math.max(total-shown,0);
+    btn.innerHTML='Show '+more+' more shows &#9662;';
+    btn.addEventListener('click',function(){
+      var collapsed=grid.classList.toggle('collapsed');
+      btn.innerHTML=collapsed?('Show '+more+' more shows &#9662;'):'Show fewer &#9652;';
+    });
+  }
+})();
+</script>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
