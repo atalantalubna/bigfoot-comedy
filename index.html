@@ -152,6 +152,17 @@
   .la-weekly .cap{font-size:.6rem; letter-spacing:3px; color:var(--cream-dim); text-transform:uppercase; margin-top:4px}
 
   #gallery{background:rgba(26,14,8,.84)}
+  #upcoming{background:linear-gradient(180deg, rgba(30,16,9,.86), rgba(26,14,8,.84))}
+  .upcoming-grid{display:flex; justify-content:center; gap:30px; flex-wrap:wrap}
+  .upcoming-item{max-width:400px; width:100%; text-align:center}
+  .upcoming-item>a{display:block; border-radius:12px; overflow:hidden; border:3px solid var(--wood-light); box-shadow:0 12px 30px rgba(0,0,0,.5); transition:transform .15s ease}
+  .upcoming-item>a:hover{transform:translateY(-3px)}
+  .upcoming-item img{width:100%; display:block}
+  .upcoming-meta{margin-top:16px}
+  .upcoming-meta .tag{font-family:'Rye',serif; color:var(--gold); font-size:1.5rem; font-variant-caps:all-small-caps; letter-spacing:1px}
+  .upcoming-meta .when{color:#f2e4c8; margin:6px 0 16px; font-size:1rem}
+  .upcoming-meta .when b{color:#fff}
+  .upcoming-item .btn{min-width:230px; justify-content:center}
   .gallery-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:18px; margin-top:8px}
   .gallery-grid a{display:block; border-radius:10px; overflow:hidden; border:3px solid var(--wood-light);
     box-shadow:0 8px 20px rgba(0,0,0,.4); transition:transform .15s ease}
@@ -216,6 +227,24 @@
   </div>
 </header>
 
+
+<section id="upcoming">
+  <div class="wrap">
+    <div class="star-rule">&#9733; &#9733; &#9733;</div>
+    <h2 class="sec-title">Upcoming Shows</h2>
+    <p class="sec-sub">Reserve your free spot for our next show.</p>
+    <div class="upcoming-grid">
+      <div class="upcoming-item">
+        <a href="images/upcoming-jul-west.jpg" target="_blank" rel="noopener"><img src="images/upcoming-jul-west.jpg" alt="Bigfoot Comedy West - July 26 lineup"></a>
+        <div class="upcoming-meta">
+          <div class="tag">Bigfoot Comedy West</div>
+          <div class="when"><b>July 26</b> &bull; Doors 6:30 &bull; Show 7:00 PM<br>Bigfoot Lodge West, Culver City</div>
+          <a class="btn west" href="https://bigfootwest.eventbrite.com" target="_blank" rel="noopener"><span>RSVP on Eventbrite &rarr;</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="about">
   <div class="wrap">
